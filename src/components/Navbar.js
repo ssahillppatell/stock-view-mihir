@@ -13,7 +13,10 @@ const Navbar = () => {
       className="flex justify-between items-center p-4 bg-red-400 text-white"
     >
         <h1
-          className="text-center text-3xl w-10/12"
+          className="text-center text-3xl w-10/12 cursor-pointer"
+          onClick={() => {
+            navigate('/');
+          }}
         >
           Stock View
         </h1>
@@ -22,6 +25,7 @@ const Navbar = () => {
           options={stocks}
           renderInput={(params) => <TextField {...params} label="Stocks" />}
           onChange={(e, value) => {
+            if(!value) return
             navigate(`/${value}`);
           }}
         />
