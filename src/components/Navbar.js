@@ -4,7 +4,11 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-        <h1>Stock View</h1>
+        <h1
+          className="text-center text-3xl"
+        >
+          Stock View
+        </h1>
     </div>
   )
 }
