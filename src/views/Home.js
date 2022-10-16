@@ -57,6 +57,7 @@ const Home = () => {
                 setEndDate={setEndDate}
                 setMyData={setMyData}
             />
+            <hr className='mb-6 border'/>
             <Graph
                 myData={myData}
             />

@@ -9,10 +9,12 @@ const Graph = (props) => {
 
     // Create a line chart
     return (
-        <div>
+        <div
+            className="w-1/2 m-auto"
+        >
             <Line
                 data={{
-                    labels: myData[0].date,
+                    labels: myData[0].date.map((date) => date.split("T")[0]),
                     datasets: [
                         {
                             label: myData[0]._id,
