@@ -2,7 +2,7 @@ import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, 
 import React, { useState } from 'react';
 
 const MyForm = (props) => {
-    const { startDate, setStartDate, endDate, setEndDate } = props;
+    const { startDate, setStartDate, endDate, setEndDate, setMyData } = props;
     const [selectedStocks, setSelectedStocks] = useState([]);
     
     const [stocks, setStocks] = useState(['HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE']);
@@ -14,6 +14,7 @@ const MyForm = (props) => {
             endDate,
             selectedStocks
         });
+        // Fetch data from API and setMyData
         console.log("Submit button clicked");
     }
 
