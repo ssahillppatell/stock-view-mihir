@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 // Creates a simple navbar
 const Navbar = () => {
-  const [stocks, setStocks] = useState(['HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE', 'HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE']);
+  const [stocks, setStocks] = useState(['HUL', 'TCS', 'LT', 'ZOMATO', 'AFFLE']);
 
   const navigate = useNavigate();
 
