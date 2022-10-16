@@ -36,6 +36,12 @@ const Graph = (props) => {
                         }
                     ],
                 }}
+                options={{
+                    tooltips: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                }}
             />
         </div>
     );

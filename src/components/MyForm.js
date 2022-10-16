@@ -31,7 +31,7 @@ const MyForm = (props) => {
         <div>
             <form
                 onSubmit={handleSubmit}
-                className="p-10"
+                className="p-10 bg-white-400"
             >
                 <div
                     className="flex justify-between"
